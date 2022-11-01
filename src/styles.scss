@@ -52,3 +52,7 @@ div[role="progressbar"]::before {
   content: counter(percentage) '%';
 }
 
+#mycontainer {
+  max-width: 1280px !important;
+}
+
