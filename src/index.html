@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
   </head>
 
   <body>
@@ -68,7 +70,7 @@
               <div class="card-body">
                 <h5 class="card-title">Marvin Cruz Sandoval</h5>
                 <p class="card-text">Full Stack Developer Jr.</p>
-                <p class="card-text">
+                <p id="description_01" class="card-text">
                   <small class="text-muted"
                     >Ingeniero Electricista orientado al análisis de sistemas
                     eléctricos, desarrollo de modelos computacionales para
@@ -77,6 +79,11 @@
                     eléctricos y de EERR</small
                   >
                 </p>
+
+                  <button type="button" class="btn btn-outline-primary" onclick="editText()">
+                  <i class="bi bi-pencil"></i>    
+                  </button>
+
               </div>
             </div>
           </div>
@@ -341,5 +348,20 @@
 
 
 </div>
+
+<script>
+function editText() 
+
+{
+
+let nuevaDescripcion = prompt("Nueva descripción:",);
+
+document.getElementById("description_01").textContent = nuevaDescripcion;
+
+
+}
+
+</script>
+
 </body>
 </html>

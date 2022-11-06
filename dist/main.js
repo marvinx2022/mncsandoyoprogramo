@@ -30,3 +30,19 @@ eval("\n\n//# sourceURL=webpack://node-starter/./src/index.js?");
 /******/ 	
 /******/ })()
 ;
+
+function editText() 
+
+{
+
+let nuevaDescripcion = prompt("Nueva descripción:",);
+
+document.getElementById("description_01").textContent = nuevaDescripcion;
+
+
+}
+
+
+
+
+
